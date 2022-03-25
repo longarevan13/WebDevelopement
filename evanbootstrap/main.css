@@ -1,0 +1,41 @@
+.blockquote{
+    margin: 20px 0;
+    padding: 0 0 0 26px;
+    border-left: 5px solid gray;
+  }
+  .alertColor{
+    background-color: rgb(238, 118, 118)
+  }
+  img
+  {
+    background-color: bisque;
+    margin:20px;
+    padding:10px;
+    width:250px; height:200px;
+    border: 1px solid black;
+  }
+ .favorites{
+   border:1px solid gray;
+   border-radius:10px;
+   margin:5% auto;
+   width:75%; 
+   background-color:rgb(240, 210, 210) ;
+   color: rgb(90, 88, 88);
+   text-align:center;
+ }
+ ul{
+   list-style-type: none;
+   text-align: left;
+ }
+ .search{
+   width:95%;
+   margin:1% auto;
+ }
+ .searchButton{
+   background-color:rgb(123, 177, 238);
+   margin:1% auto;
+   border-radius: 5px;
+ }
+ .tablecolor{
+   background-color:rgb(253, 246, 236);
+ }
