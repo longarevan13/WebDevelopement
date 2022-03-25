@@ -1,0 +1,80 @@
+<html>
+
+<head>
+	<title>Thanksgiving Match Game</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="logic.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+
+		/* Add your css here */
+body{
+	background-image: url('autumn.jpg');
+	background-size: 50%;
+	text-align: center;
+}
+h1{
+	font-family:'sniglet', cursive;
+	color: orange;
+}
+#game-wrapper {
+	margin:auto;
+	margin-top: 40px;
+	padding: 20px;
+	width: 760px;
+	background-color: white;
+	border-radius: 20px;
+	border: 5px solid orange;
+}
+.card {
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+}
+.card_front{
+	background:linear-gradient(orange, yellow);
+
+}
+.card_back{
+	background-color:white;
+	transform:rotatey(180deg);
+}
+.card_back img{
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+}
+.is-flipped{
+	transform: rotateY(180deg);
+}
+a{
+	font-family:'sniglet', cursive;
+	color: orange;
+}
+	</style>
+</head>
+
+<body>
+<!-- Add your html here -->
+<div id = "game-wrapper">
+	<h1>	Matching Game	</h1>
+	<div id = "match-grid"></div>
+	<a onclick = "start()">RESTART</a>
+</div>
+
+
+
+	<script>
+		/* Add the images in following array */
+		var images = ["pumpkin.png", "boat.png", "corn.png"];
+
+		start();
+
+	</script>
+</body>
+
+</html>
