@@ -1,0 +1,86 @@
+<html>
+
+<head>
+	<title>Thanksgiving Match Game</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="logic.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		body {
+			text-align: center;
+			background-image: url('autumn.jpg');
+			background-size: 50%;
+		}
+
+		h1 {
+			font-family: 'Sniglet', cursive;
+			color: orange;
+			margin: 10px;
+		}
+
+		#game-wrapper {
+			margin: auto;
+			margin-top: 40px;
+			padding: 20px;
+			width: 760px;
+			background-color: #ffffff;
+			border-radius: 20px;
+			border: 5px solid orange;
+		}
+
+		.card {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			backface-visibility: hidden;
+		}
+
+		.card_front {
+			background-image: linear-gradient(orange, yellow);
+		}
+
+		.card_back {
+			background: white;
+			transform: rotateY(180deg);
+		}
+
+		.card_back img {
+			width: 80px;
+			height: 80px;
+			margin-top: 10px;
+		}
+
+
+		.is-flipped {
+			transform: rotateY(180deg);
+		}
+
+		a {
+			font-family: 'Sniglet', cursive;
+			background-color: orange;
+			display: block;
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="game-wrapper">
+		<h1>Thanksgiving Match Game</h1>
+		<div id="match-grid"></div>
+		<a onclick="start()">RESTART</a>
+	</div>
+
+	<script>
+		var images = ["pumpkin.png", "boat.png", "corn.png"];
+		start();
+
+
+	</script>
+</body>
+
+</html>
